@@ -1,205 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Azzam Naufal Mu'dz - Data Analyst</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Azzam Naufal Mu’adz — Data Analyst turning raw data into clear decisions." />
+  <title>Azzam Naufal Mu’adz — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <div class="nav">
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="#hero"><img src="images/logo.svg" alt=""></a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#aboutme">About Me</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolios">Portfolio</a></li>
-                        <li><a href="contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="burger">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
-                </div>
+  <!-- announcement bar -->
+  <div class="topbar">👋 Open to freelance analytics work &amp; collaborations — let's talk!</div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">AN.</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#" data-chat>Contact</a>
+      </nav>
+      <a href="#" class="btn-brutal btn-small" data-chat>Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero dots">
+      <span class="shape shape-star" aria-hidden="true">✦</span>
+      <span class="shape shape-circle" aria-hidden="true"></span>
+      <span class="shape shape-squiggle" aria-hidden="true">
+        <svg width="90" height="26" viewBox="0 0 90 26" fill="none"><path d="M2 20 C 15 4, 25 4, 38 18 S 62 24, 74 8 S 84 6, 88 12" stroke="#2F9E44" stroke-width="4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="shape shape-plus" aria-hidden="true">+</span>
+
+      <div class="container hero-inner">
+        <span class="sticker reveal">👋 Hello, I'm</span>
+        <h1 class="hero-title reveal">Azzam Naufal<br /><span class="hl">Mu’adz</span></h1>
+        <p class="handnote reveal">yes, that's my real name <span class="arrow">⤴</span></p>
+        <p class="hero-role reveal">— <span id="typed"></span><span class="caret">|</span></p>
+        <p class="hero-desc reveal">
+          I turn raw data into <span class="hl">clear decisions</span> — dashboards,
+          deep-dive analysis, and data stories that stakeholders actually use.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn-brutal btn-lime">View My Work</a>
+          <a href="#" class="btn-brutal btn-white" data-chat>Get In Touch</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span class="chip">📍 Indonesia · Working remotely</span>
+          <a class="chip chip-link" href="https://github.com/azzamnaufaal" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            @azzamnaufaal
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Power BI</span><i>✦</i><span>Tableau</span><i>✦</i><span>SQL</span><i>✦</i><span>Python</span><i>✦</i><span>R</span><i>✦</i><span>Excel</span><i>✦</i><span>Data Storytelling</span><i>✦</i><span>Dashboard Design</span><i>✦</i>
+          <span>Power BI</span><i>✦</i><span>Tableau</span><i>✦</i><span>SQL</span><i>✦</i><span>Python</span><i>✦</i><span>R</span><i>✦</i><span>Excel</span><i>✦</i><span>Data Storytelling</span><i>✦</i><span>Dashboard Design</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <span class="tag reveal">✦ About</span>
+        <h2 class="section-title reveal">Data is only useful when <span class="hl">people understand it</span></h2>
+        <p class="handnote reveal">the pretty chart is optional, the insight isn't 😄</p>
+        <div class="about-grid">
+          <div class="card-brutal about-text reveal">
+            <p>
+              I'm a <strong>Data Analyst</strong> at an IT consulting company, working mostly
+              remotely. My day-to-day is translating business questions into dashboards
+              and analyses — from KPI tracking in <strong>Power&nbsp;BI</strong> and
+              <strong>Tableau</strong> to digging into the numbers with
+              <strong>SQL</strong> and <strong>Python</strong>.
+            </p>
+            <p>
+              What I care about most is the <strong>story behind the numbers</strong>:
+              making insights clear enough that stakeholders can act on them with
+              confidence.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-sticker s-lav reveal">
+              <p class="stat-num">15+</p>
+              <p class="stat-label">Public repos<br />on GitHub</p>
             </div>
+            <div class="stat-sticker s-peach reveal">
+              <p class="stat-num">3+</p>
+              <p class="stat-label">BI &amp; analytics<br />tools mastered</p>
+            </div>
+            <div class="stat-sticker s-sky reveal">
+              <p class="stat-num">100%</p>
+              <p class="stat-label">Remote-first<br />workflow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </div>
-        <div class="main-container">
-            <section id="hero">
-                <div class="hero-left">
-                    <h3 class="main-title">Hey there!</h3>
-                    <h1 class="hero-name">I'm <span>Azzam</span> Naufal</h1>
-                    <p>Data Analyst with excess 2 years of experience in various kinds of projects. Proficient in
-                        various BI
-                        tools. Passionate about data visualization.</p>
-                    <div class="row">
-                        <a href="" class="button">Explore Now</a>
-                        <span>You can explore more about my portofolio and <br> personal experience here</span>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <img src="/images/hero.svg" alt="All About Data">
-                </div>
-            </section>
-        </div>
-    </header>
-    <!-- End of header -->
-
-    <!-- About Me -->
-    <section id="aboutme">
-        <div class="aboutme main-container">
-            <h3 class="pre-title">About Me</h3>
-            <h1 class="section-title">Skilss & Education</h1>
-        </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-tint" id="skills">
+      <div class="container">
+        <span class="tag reveal">✦ Skills</span>
+        <h2 class="section-title reveal">What I <span class="hl">work with</span></h2>
         <div class="skills-grid">
-            <div class="skills-left">
-                <div class="education">shel</div>
-            </div>
-            <div class="skills-right"></div>
+          <div class="skill-card c-lav reveal">
+            <div class="skill-icon">◈</div>
+            <h3>BI &amp; Visualization</h3>
+            <p>Dashboards people actually open — fast, clear, decision-ready.</p>
+            <div class="tags"><span>Power BI</span><span>Tableau</span><span>DAX</span></div>
+          </div>
+          <div class="skill-card c-peach reveal">
+            <div class="skill-icon">⬡</div>
+            <h3>Data Analysis</h3>
+            <p>From messy raw tables to trusted datasets and sharp insights.</p>
+            <div class="tags"><span>SQL</span><span>Python</span><span>R</span><span>Excel</span></div>
+          </div>
+          <div class="skill-card c-sky reveal">
+            <div class="skill-icon">✦</div>
+            <h3>Delivery</h3>
+            <p>Insights are worthless if nobody acts on them — I close that gap.</p>
+            <div class="tags"><span>Data Storytelling</span><span>KPI Design</span><span>Dashboard Optimization</span></div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- End of About Me -->
-    
-    <!-- Services -->
-    <section id="services">
-        <div class="services main-container">
-            <h3 class="pre-title">Services</h3>
-            <h1 class="section-title services-title">Specialized In</h1>
 
-            <div class="grid-3">
-                <!-- service 1 -->
-                <div class="service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M7 19h-6v-11h6v11zm8-18h-6v18h6v-18zm8 11h-6v7h6v-7zm1 9h-24v2h24v-2z" />
-                        </svg>
-                    </div>
-                    <h4>BI Development</h4>
-                    <p>Turn boring data into cool stories through outstanding visualizations using any BI tool.</p>
-                </div>
-                <!-- service 2 -->
-                <div class="service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M10.938 20h-10.938v-20h21v11.462c-.594-.472-1.269-.843-2-1.094v-4.368h-17v12h8.212c.136.713.384 1.386.726 2zm13.062 2.586l-2.831-2.832c.522-.79.831-1.735.831-2.754 0-2.761-2.238-5-5-5s-5 2.239-5 5 2.238 5 5 5c1.019 0 1.964-.309 2.755-.832l2.831 2.832 1.414-1.414zm-10-5.586c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm-9-1h-2v-5h2v5zm3 0h-2v-8h2v8zm3 0h-2v-3h2v3z" />
-                        </svg>
-                    </div>
-                    <h4>Data Scientist</h4>
-                    <p>Create and maintain Machine Learning pipelines that are scalable, robust, and ready for
-                        production.</p>
-                </div>
-                <!-- service 3 -->
-                <div class="service">
-                    <div class="service-icon">
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708" />
-                        </svg>
-                    </div>
-                    <h4>Web Development</h4>
-                    <p>Create and maintain websites and also take care of its performance and traffic capacity.</p>
-                </div>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <span class="tag reveal">✦ Projects</span>
+        <h2 class="section-title reveal">Recent <span class="hl">work</span></h2>
+        <p class="handnote reveal">real repos, real code — go see for yourself ⤵</p>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb t1"><span>01</span><i class="thumb-doodle">✦</i></div>
+            <div class="project-body">
+              <h3>Sentiment Analysis — TikTok Reviews</h3>
+              <p>NLP sentiment analysis on Google Play Store reviews of TikTok apps — what users love, what they complain about.</p>
+              <div class="tags"><span>Python</span><span>NLP</span><span>Jupyter</span></div>
+              <a class="project-link" href="https://github.com/azzamnaufaal/Sentiment-Analysis" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
-        </div>
-    </section>
-    <!-- End of Services -->
-
-    <!-- Portfolio -->
-    <section id="portfolios">
-        <div class="portfolios main-container">
-            <h3 class="pre-title">Portfolios</h3>
-            <h1 class="section-title portfolio-main-title">Recent Work</h1>
-            <div class="grid-3">
-                <!-- Portfolio 1 -->
-                <div class="portfolio">
-                    <div class="portfolio-cover">
-                        <img src="./images/portfolios/portfolio-1.png" alt="Portfolio 1">
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-title">
-                            <h4>Medical Dashboard</h4>
-                            <a href="" class="portfolio-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="portfolio-tags">
-                            <div>Power BI</div>
-                            <div>MySql</div>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam laudantium harum
-                            neque accusantium iusto voluptatibus voluptates ipsa sint. Porro.</p>
-                    </div>
-                </div>
-                <!-- Portfolio 2 -->
-                <div class="portfolio">
-                    <div class="portfolio-cover">
-                        <img src="./images/portfolios/portfolio-2.png" alt="Portfolio 2">
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-title">
-                            <h4>IKEA Dashboard</h4>
-                            <a href="" class="portfolio-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="portfolio-tags">
-                            <div>Power BI</div>
-                            <div>MySql</div>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam laudantium harum
-                            neque accusantium iusto voluptatibus voluptates ipsa sint. Porro.</p>
-                    </div>
-                </div>
-                <!-- Portfolio 3 -->
-                <div class="portfolio">
-                    <div class="portfolio-cover">
-                        <img src="./images/portfolios/portfolio-3.jpeg" alt="Portfolio 3">
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-title">
-                            <h4>Data Science Modeling</h4>
-                            <a href="" class="portfolio-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="portfolio-tags">
-                            <div>Power BI</div>
-                            <div>MySql</div>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam laudantium harum
-                            neque accusantium iusto voluptatibus voluptates ipsa sint. Porro.</p>
-                    </div>
-                </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-thumb t2"><span>02</span><i class="thumb-doodle">⬡</i></div>
+            <div class="project-body">
+              <h3>Machine Learning for Retail — R</h3>
+              <p>Product-package recommendations that help solve stock problems and lift retail sales, built with R.</p>
+              <div class="tags"><span>R</span><span>Machine Learning</span></div>
+              <a class="project-link" href="https://github.com/azzamnaufaal/Machine-Learning-for-Retail-with-R" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-thumb t3"><span>03</span><i class="thumb-doodle">◈</i></div>
+            <div class="project-body">
+              <h3>Power BI Dashboards</h3>
+              <p>Interactive business dashboards in Power BI — KPI tracking and reporting designed for decision-makers.</p>
+              <div class="tags"><span>Power BI</span><span>DAX</span><span>Dashboards</span></div>
+              <a class="project-link" href="https://github.com/azzamnaufaal/PowerBI-Project" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
-    <!-- End of Portfolio -->
+
+  </main>
+
+  <!-- ============ CHAT WIDGET → WhatsApp ============ -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-teaser" id="chatTeaser">Butuh analis data? Chat aku! 👋</div>
+    <button class="chat-bubble" id="chatBubble" aria-label="Buka chat">
+      <span aria-hidden="true">💬</span>
+      <span class="chat-dot" aria-hidden="true"></span>
+    </button>
+    <div class="chat-panel" id="chatPanel" hidden>
+      <div class="chat-head">
+        <div class="chat-avatar">AN</div>
+        <div class="chat-head-text">
+          <p class="chat-name">Asisten Azzam</p>
+          <p class="chat-status"><span class="online-dot"></span> Online — dibalas via WhatsApp</p>
+        </div>
+        <button class="chat-close" id="chatClose" aria-label="Tutup chat">✕</button>
+      </div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-quick" id="chatQuick">
+        <button type="button" data-q="Halo Azzam! Aku mau tanya soal jasa freelance data analytics.">💼 Tanya jasa freelance</button>
+        <button type="button" data-q="Halo Azzam! Aku mau tanya soal jasa pembuatan dashboard (Power BI/Tableau). Bisa diskusi lebih lanjut?">📊 Tanya jasa dashboard</button>
+        <button type="button" data-q="Halo Azzam! Salam kenal 👋">👋 Sekadar sapa</button>
+      </div>
+      <form class="chat-input" id="chatForm">
+        <input id="chatText" type="text" placeholder="Tulis pesan..." autocomplete="off" aria-label="Tulis pesan" />
+        <button type="submit" aria-label="Kirim pesan">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Azzam Naufal Mu’adz · Made with ☕ and too many dashboards</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
